@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthimetic_Calculator</title>  
+    <style>
+        .block1{
+            margin-top: 100px;
+            text-align: center;
+            font-size: large;
+            font-weight: bolder;
+        }
+        h3{
+            line-height: 20px;
+        }
+        body{
+            font-size: larger;
+            background-color:rgb(168, 237, 214);
+        }
+    </style> 
+</head>
+<body>
+    <script>
+        function f(){
+          var a=parseInt(document.getElementById("n1").value);
+          var b= parseInt(document.getElementById("n2").value);
+           document.getElementById("sum").value=a+b;
+           document.getElementById("sub").value=a-b;
+           document.getElementById("division").value=a/b;
+           document.getElementById("product").value=a*b;
+           document.getElementById("exp").value=a**b;
+           document.getElementById("mod").value=a%b;
+           document.getElementById("inc").value=++a;
+           document.getElementById("dec").value=--a;   
+        }
+      </script>
+     <h1 style="text-align:center">Simple Arthimetic Calculator</h1>
+    <div class="block1"><form id="form1">
+        <label for="n1">Number 1:</label>
+        <input type="text" id="n1">
+        <label for="n2">Number 2:</label>
+        <input type="text" id ="n2">
+    </form>
+    <br>
+    <input type="button" value="Submit" style="width: 300px; margin-left:70px;font:100" onclick="f()"><br><br>
+    <h3><label for="res">Sum</label>
+    <input type="text" id="sum"><br><br>
+    <label for="res">Subtraction</label>
+    <input type="text" id="sub"><br><br>
+    <label for="res">Division</label>
+    <input type="text" id="division"><br><br>
+    <label for="res">Product</label>
+    <input type="text" id="product"><br><br>
+    <label for="res">Exponential</label>
+    <input type="text" id="exp"><br><br>
+    <label for="res">Modulus</label>
+    <input type="text" id="mod"><br><br>
+    <label for="res">Increment</label>
+    <input type="text" id="inc"><br><br>
+    <label for="res">Decrement</label>
+    <input type="text" id="dec">
+    </h3>
+    </div>
+
+</body>
+</html>
