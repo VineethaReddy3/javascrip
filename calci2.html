@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Arthimetic Calci</title>
+    <style>
+        
+        body{
+            background-color:lavender;
+            text-align: center;
+            margin: 300px;
+            letter-spacing: 1px;
+            width:max-content;
+            font-size: large;
+            font-weight:bold;
+            line-height: 50px;
+             }
+        
+    </style>
+</head>
+<body>
+    <script>
+        function f(){
+      var a = parseInt(document.getElementById("n1").value);
+      var b = parseInt(document.getElementById("n2").value);
+      var operator=document.getElementById("op").value;
+      switch(operator){
+        case '+':
+        document.getElementById("res").value=a+b;
+        break;
+        case '-':
+        document.getElementById("res").value=a-b;
+        break;
+        case '*':
+        document.getElementById("res").value=a*b;
+        break;
+        case '/':
+        document.getElementById("res").value=a/b;
+        break;
+        case '%':
+        document.getElementById("res").value=a%b;
+        break;
+        default:
+        window.alert("Enter only Arthimetic operators (+,-,*,/,%)");
+        break;
+      }
+        }
+    </script>
+    <h1>Arthimetic calculator</h1>
+    <div id="block"><form>
+<label for="n1">Number 1 :</label>
+<input type="text" id="n1">
+<label for="op">Arthimetic operator:</label>
+<input type="text" id="op">
+<label for="n2">Number 2 :</label>
+<input type="n2" id="n2">
+    </form>
+    </div>
+    <input type="button" value="submit" onclick="f()">
+    <br><label for="res">Result :</label>
+    <input type="text" id="res">
+</body>
+</html>
